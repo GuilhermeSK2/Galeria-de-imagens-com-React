@@ -13,7 +13,7 @@ function GaleriaDeImagens() {
   return (
     <div>
       <h2>Galeria de Imagens</h2>
-      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+      <div id='galeria' style={{ display: 'flex', flexWrap: 'wrap' }}>
         {imagens.map((imagem, index) => (
           <img key={index} src={imagem} alt={`Imagem ${index + 1}`} style={{ margin: '5px' }} />
         ))}
